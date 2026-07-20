@@ -4,7 +4,7 @@
 
 ### 1.1.1 Realitas Perubahan Iklim
 
-Pada tahun 2024, dunia sedang menghadapi krisis iklim yang belum pernah terjadi sebelumnya. Berdasarkan laporan IPCC (Intergovernmental Panel on Climate Change) 2021:
+Pada tahun 2024, dunia sedang menghadapi krisis iklim yang belum pernah terjadi sebelumnya. Berdasarkan laporan IPCC (Intergovernmental Panel on Climate Change) 2021 [1]:
 
 - **Emisi CO₂ global mencapai 36.3 gigatons** per tahun (tertinggi dalam sejarah manusia)
 - **Suhu global sudah naik 1.1°C** dibanding era pre-industrial
@@ -17,7 +17,7 @@ Penyebab utama:
 
 ### 1.1.2 Respons Global & Komitmen Paris
 
-Sejak Perjanjian Paris 2015, lebih dari 190 negara berkomitmen:
+Sejak Perjanjian Paris 2015, lebih dari 190 negara berkomitmen [2]:
 - ✅ Membatasi kenaikan suhu ke **1.5°C–2°C** di atas pre-industrial level
 - ✅ Mencapai **net-zero emissions** pada 2050
 - ✅ Melaporkan emisi secara **transparan & terukur**
@@ -57,11 +57,11 @@ TOTAL: 6–12 BULAN per audit + Biaya: $2–5 juta USD
 
 ### 1.2.2 Greenwashing: Rekayasa Data Lingkungan
 
-**Greenwashing** adalah praktik korporasi yang mengklaim komitmen lingkungan tetapi tidak didukung aksi nyata.
+**Greenwashing** adalah praktik korporasi yang mengklaim komitmen lingkungan tetapi tidak didukung aksi nyata [5].
 
 **Contoh Kasus:**
-- **Volkswagen (2015):** Mengklaim mobil "clean diesel" tapi sebenarnya melebihi emisi standard
-- **Shell (2023):** Mundur dari target net-zero sambil terus drilling minyak
+- **Volkswagen (2015):** Mengklaim mobil "clean diesel" tapi sebenarnya melebihi emisi standard [6]
+- **Shell (2023):** Mundur dari target net-zero sambil terus drilling minyak [7]
 - **Fast Fashion Brands:** Klaim "sustainable" padahal supply chain masih highly polluting
 
 **Kenapa Greenwashing Terjadi?**
@@ -80,7 +80,7 @@ TOTAL: 6–12 BULAN per audit + Biaya: $2–5 juta USD
 
 ### 1.3.1 Mengapa Blockchain?
 
-Blockchain adalah teknologi **distributed ledger** yang memiliki karakteristik unik:
+Blockchain adalah teknologi **distributed ledger** yang memiliki karakteristik unik [8]:
 
 | Karakteristik | Manfaat untuk Audit |
 |---|---|
@@ -115,7 +115,7 @@ ELSE IF emisi_menurun_konsisten THEN
 
 ### 1.3.3 Hyperledger Fabric sebagai Platform
 
-Kami memilih **Hyperledger Fabric** (bukan Bitcoin atau Ethereum) karena:
+Kami memilih **Hyperledger Fabric** (bukan Bitcoin atau Ethereum) karena [9]:
 1. **Enterprise-grade** — trusted oleh IBM, Maersk, TradeLens
 2. **Permissioned** — hanya negara/korporasi authorized yang bisa join
 3. **Scalable** — bisa handle jutaan transaksi per hari
@@ -139,7 +139,7 @@ Kami melakukan pencarian di Scopus & Web of Science dengan query:
 | Blockchain untuk sustainability (general) | ~30 papers | Teori, bukan implementasi |
 | Blockchain + audit emisi (spesifik) | **< 5 papers** | Belum ada yang terintegrasi |
 
-**Kesimpulan:** Penelitian Blockchain untuk sustainability compliance masih **very nascent** & belum ada solusi end-to-end yang terintegrasi.
+**Kesimpulan:** Penelitian Blockchain untuk sustainability compliance masih **very nascent** & belum ada solusi end-to-end yang terintegrasi. Contoh studi terkait: [10]–[12].
 
 ### 1.4.2 Gap Spesifik
 
@@ -148,17 +148,17 @@ Gap penelitian kami:
 1. **Gap #1: Segmentasi Negara** 
    - ❌ Belum ada penelitian yang mengelompokkan negara berdasarkan profil emisi & energi
    - ❌ Threshold Smart Contract diatur secara ad-hoc, bukan empiris
-   - ✅ **Kami akan gunakan K-Means Clustering pada 50 negara** → dapatkan threshold berbasis data
+   - ✅ **Kami akan gunakan K-Means Clustering pada 50 negara** → dapatkan threshold berbasis data [13], [14]
 
 2. **Gap #2: Arsitektur Blockchain Holistik**
    - ❌ Penelitian existing hanya membahas blockchain secara general, tidak spesifik untuk compliance
    - ❌ Belum ada chaincode/smart contract yang detail & teruji
-   - ✅ **Kami akan develop Hyperledger Fabric network lengkap** dengan 5+ peer nodes
+   - ✅ **Kami akan develop Hyperledger Fabric network lengkap** dengan 5+ peer nodes [9]
 
 3. **Gap #3: Deteksi Greenwashing via ML**
    - ❌ Belum ada mekanisme otomatis untuk detect anomali/greenwashing dalam data emisi
    - ❌ Audit hanya check apakah data valid, bukan apakah suspicious
-   - ✅ **Kami akan integrate ML (Isolation Forest + LSTM) untuk anomaly detection** → detect greenwashing attempts
+   - ✅ **Kami akan integrate ML (Isolation Forest + LSTM) untuk anomaly detection** → detect greenwashing attempts [16], [17], [15]
 
 4. **Gap #4: Validasi pada Dataset Riil**
    - ❌ Mayoritas paper blockchain sustainability hanya teori/simulasi
@@ -172,14 +172,14 @@ Gap penelitian kami:
 
 1. **Novel Architecture** — Pertama kali: kombinasi K-Means Clustering + Hyperledger Fabric Smart Contract + ML Anomaly Detection untuk sustainability audit
 2. **Methodological Rigor** — Validasi pada dataset riil, bukan simulasi
-3. **Scopus-Ready Output** — Dirancang untuk 3 publikasi Q1/Q2 (IEEE Access, IEEE TSE, Journal of Cleaner Production)
+3. **Scopus-Ready Output** — Dirancang untuk 3 publikasi Q1/Q2 (IEEE Access, IEEE TSE, Journal of Cleaner Production) [10], [12]
 
 ### 1.5.2 Relevansi Praktis
 
 1. **SDG Alignment** — Mendukung UN Sustainable Development Goal:
    - SDG #13 (Climate Action)
    - SDG #12 (Responsible Consumption & Production)
-   - SDG #17 (Partnerships for Goals)
+   - SDG #17 (Partnerships for Goals) [2]
 
 2. **Adopsi Industri** — Blockchain sustainability audit bisa diadopsi oleh:
    - 🏢 Korporasi multinasional (untuk ESG reporting)
@@ -207,9 +207,9 @@ Indonesia memiliki peran strategis:
 Mengembangkan & memvalidasi **arsitektur blockchain terintegrasi** untuk audit kepatuhan keberlanjutan otomatis yang menggabungkan clustering, smart contract, & machine learning.
 
 ### Tujuan Khusus:
-1. **TS1:** Mengidentifikasi & mensegmentasi 50+ negara menjadi kluster emisi berbasis K-Means, menghasilkan threshold baseline untuk Smart Contract
-2. **TS2:** Merancang & mengimplementasikan Hyperledger Fabric network dengan chaincode smart contract untuk audit compliance otomatis
-3. **TS3:** Mengembangkan ensemble ML model untuk deteksi anomali emisi & greenwashing attempts
+1. **TS1:** Mengidentifikasi & mensegmentasi 50+ negara menjadi kluster emisi berbasis K-Means, menghasilkan threshold baseline untuk Smart Contract [13]
+2. **TS2:** Merancang & mengimplementasikan Hyperledger Fabric network dengan chaincode smart contract untuk audit compliance otomatis [9]
+3. **TS3:** Mengembangkan ensemble ML model untuk deteksi anomali emisi & greenwashing attempts [16], [17]
 4. **TS4:** Mengintegrasikan ketiga komponen menjadi sistem end-to-end & memvalidasi pada dataset Climate & Energy 2020–2024
 
 ---
@@ -238,19 +238,19 @@ BULAN 1-2 (Semester 1):
 BULAN 3-6 (Semester 2):
 ├─ Tahap 1: K-Means Clustering (50 negara → 3 kluster)
 ├─ Analisis threshold emisi per kluster
-└─ Output: Paper #1 (Q2 Journal: IEEE Access / Sustainability)
+└─ Output: Paper #1 (Q2 Journal: IEEE Access / Sustainability) [10]
 
 BULAN 6-10 (Semester 3):
 ├─ Tahap 2: Design & implement Hyperledger Fabric network
 ├─ Develop smart contract chaincode (Golang)
 ├─ Testing & validation
-└─ Output: Paper #2 (Q1 Journal: IEEE TSE)
+└─ Output: Paper #2 (Q1 Journal: IEEE TSE) [9]
 
 BULAN 10-14 (Semester 4):
 ├─ Tahap 3: ML anomaly detection (Isolation Forest + LSTM)
 ├─ Full system integration & testing
 ├─ Final validation on real dataset
-└─ Output: Paper #3 (Q1 Journal: Journal of Cleaner Production)
+└─ Output: Paper #3 (Q1 Journal: Journal of Cleaner Production) [16], [17]
 
 BULAN 14-16 (Semester 5-6):
 ├─ Finalisasi disertasi
@@ -274,4 +274,3 @@ BULAN 14-16 (Semester 5-6):
 ---
 
 **NEXT SECTION:** BAB 2 akan membahas Tinjauan Pustaka secara mendalam untuk setiap komponen (Blockchain, Smart Contract, K-Means Clustering, Anomaly Detection, Sustainability Audit Standards).
-
